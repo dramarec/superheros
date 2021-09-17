@@ -1,0 +1,148 @@
+@import '~antd/dist/antd.css';
+@import url(https://fonts.googleapis.com/css?family=Sacramento);
+
+html {
+    overflow: auto;
+}
+
+#root,
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --main-color: #1d226c;
+    --second-color: #bfbfbf;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 0 260px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: rgb(68, 66, 66);
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header_logo {
+    width: 200px;
+}
+
+.header_navlink {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* CRAD LIST */
+
+.ant-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.superhero-card__cover-img {
+    width: 100%;
+    height: 495px;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.superhero-card__title {
+    text-align: center;
+    width: 290px;
+}
+
+/* CARD BY ID */
+
+.container__superheroById {
+    padding: 20px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.superhero {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 60px;
+}
+
+.superhero__details {
+    margin-left: 20px;
+}
+
+.superhero__title.ant-typography {
+    display: block;
+    color: var(--main-color);
+    width: 400px;
+    padding: 10px 0;
+    font-size: 21px;
+}
+
+.superhero__title.ant-typography span {
+    color: var(--second-color);
+    font-weight: 500;
+    font-size: 21px;
+    margin-left: 5px;
+}
+
+/*  CREATEHERO */
+
+.container__createEditHero {
+    width: 1000px;
+    padding: 20px 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*  PAGINATION */
+
+.hero-pagination {
+    padding: 30px 30px;
+}
+
+/*  LOADER  */
+
+.load-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.load-header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.load-title.ant-typography {
+    color: var(--main-color);
+    margin-bottom: 5px;
+}
+
+.spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.ArrowLeftOutlined:hover {
+    transition-duration: 250ms;
+    transform: scale(1.3);
+}
